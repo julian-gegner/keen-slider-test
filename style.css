@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.keen-slider-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+}
+
+.keen-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.keen-slider__slide {
+  background-color: #eee;
+  font-size: 1.5rem;
+  height: 200px;
+  color: #333;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
